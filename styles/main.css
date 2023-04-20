@@ -1,0 +1,26 @@
+body {
+    background-color:antiquewhite;
+
+}
+
+.main-header {
+    background-color: black;
+    text-align: center;
+    padding: 1%;
+}
+.main-header li {
+    display: inline;
+    margin: 10%;
+    font-size: 2em;
+}
+
+.main-header a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-footer {
+    background-color: gray;
+    color:white;
+    padding: 1%;
+}

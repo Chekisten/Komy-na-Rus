@@ -2,7 +2,7 @@
 <header class="main-header">
     <ul>
         <li>
-            <a href="index.php"> Карта </a>
+            <a href="map.php"> Карта </a>
         </li>
         <li>
             <a href="blog.php"> Блог </a>

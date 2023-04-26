@@ -24,3 +24,29 @@ body {
     color:white;
     padding: 1%;
 }
+
+.map {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    
+}
+svg {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+    
+}
+.part {
+    opacity: .3;
+    
+}
+.part:hover {
+    transition: opacity .2s ease;
+    opacity: .5;
+    cursor: pointer;
+}
+

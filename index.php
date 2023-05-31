@@ -11,7 +11,7 @@
 
         <main>
             <section>
-                <h1> Кому на Руси жить хорошо <h1>
+                <h1> Кому на Руси жить хорошо<h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, magnam voluptates! Eum fugit, omnis at aspernatur modi, distinctio quo id incidunt possimus officia aliquid cumque. Doloribus fuga magnam repellendus exercitationem?</p>
             </section>
         </main>

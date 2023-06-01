@@ -14,7 +14,8 @@
                 <h1> Карта ПФО<h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, magnam voluptates! Eum fugit, omnis at aspernatur modi, distinctio quo id incidunt possimus officia aliquid cumque. Doloribus fuga magnam repellendus exercitationem?</p>
             </section>
-            <div class="map_fo">
+            <div class="map-container">
+            <div class="map">
                 <svg viewBox="0 0 1200 1146"> 
 
                     //Tatarstan
@@ -63,6 +64,7 @@
 
                 </svg>
             </div>
+        </div>
         </main>
 
         <?php require("components/footer.php");

@@ -10,7 +10,7 @@ mapButton.onclick = function(){
 let el_1 = document.getElementById('map_ch');
 
 function changeSingle(element) {
-    element.innerHTML = 'Притве';
+    element.innerHTML = 'Привет';
     }
 
 

@@ -9,6 +9,7 @@ if (mysqli_stmt_prepare($stmt, 'SELECT id FROM users WHERE confirmation_token=?'
   print_r(mysqli_stmt_error ($stmt));
   mysqli_stmt_close($stmt);
   if( $idusers ){
+    header('Location: /'); 
     $query = "UPDATE users SET confirmation_token='', verified = 'Y' WHERE id=$idusers";
     mysqli_query($db, $query);
     $_SESSION['message'][] = 'Email подтверждён!';
@@ -16,6 +17,6 @@ if (mysqli_stmt_prepare($stmt, 'SELECT id FROM users WHERE confirmation_token=?'
     exit; 
   }
   $_SESSION['message'][] = 'Некорректная ссылка';
-  header('Location: /');  
+   
 }
 ?>

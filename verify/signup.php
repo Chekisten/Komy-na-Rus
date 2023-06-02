@@ -50,17 +50,18 @@ $query = "INSERT INTO `users` (`id`, `email`, `pass`, `verified`, `created_at`, 
 
 $stmt = mysqli_stmt_init($db);
 if (mysqli_stmt_prepare($stmt, $query)) {
+ 
   mysqli_stmt_bind_param($stmt, "s", $email);
   mysqli_stmt_execute($stmt);
   $_SESSION['message'][] = 'Проверьте емейл и подтвердите регистрацию';
-
+  
   
   $subject = "Подтверждение регистрации {$_SERVER['SERVER_NAME']}";
   $msg = "Нажмите на <a href=\"http://{$_SERVER['SERVER_NAME']}?confirmation_token=" . $confirmation_token . "\">ссылку</a> для подтверждения email";  
   $headers = "From: no-reply@{$_SERVER['SERVER_NAME']}";
   mail($to, $subject, $msg, $headers);
-
   header('Location: /');
+  
 }
 
 }

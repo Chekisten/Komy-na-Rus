@@ -18,3 +18,4 @@ if (mysqli_stmt_prepare($stmt, 'SELECT id FROM users WHERE confirmation_token=?'
   $_SESSION['message'][] = 'Некорректная ссылка';
   header('Location: /');  
 }
+?>

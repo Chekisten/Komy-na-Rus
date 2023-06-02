@@ -65,12 +65,7 @@
 
 
                 <article class="front-article">
-                    <?php require("components/auth.php")?>
-                </article>
-            </section>
-        </main>
-<!---------------------КОД АВТОРИЗАЦИИ--------------!>
-        <?php
+<?php
         ob_start();
 
      
@@ -111,12 +106,17 @@ MESSAGE;
 
         } elseif( isset($_GET['signup']) ){
             include "verify/signup.php";
-            include "components/signup.php";
+            include "components/singup.php";
 
         }
         
 
         ?>
+                </article>
+            </section>
+        </main>
+<!---------------------КОД АВТОРИЗАЦИИ--------------!>
+
 
         <?php require("components/footer.php");
         ?>

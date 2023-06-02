@@ -47,14 +47,33 @@
         <main>
             <section>
                 <h1> Кому на Руси жить хорошо<h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, magnam voluptates! Eum fugit, omnis at aspernatur modi, distinctio quo id incidunt possimus officia aliquid cumque. Doloribus fuga magnam repellendus exercitationem?</p>
+                    <p>Данный сайт создан для того, чтобы каждый посетитель сайта имел доступ к исчерпывающей информации о регионе.</p>
+
+<p>При этом пользователь может руководствоваться любыми мотивами – переезд, поиск парковок, туризм. Информация служит для ориентирования на местности всей страны и регионов в частности.</p>
+            </section>
+            <section class="article">
+                <article class="front-article">
+                    <img src=img/glush_250_200.png alt="заглушка">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, hic itaque? Consequatur expedita voluptatem saepe sint fugit, magni ex. Minima facilis fugit doloremque aspernatur culpa. Laudantium officia mollitia accusamus illo!</p>
+
+                </article>
+                <article class="front-article">
+                <img src=img/glush_250_200.png alt="заглушка">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, hic itaque? Consequatur expedita voluptatem saepe sint fugit, magni ex. Minima facilis fugit doloremque aspernatur culpa. Laudantium officia mollitia accusamus illo!</p>
+
+                </article>
+
+
+                <article class="front-article">
+                    <?php require("components/auth.php")?>
+                </article>
             </section>
         </main>
-<!---------------------КОД АВТОРИЗАЦИИ--------------!?
+<!---------------------КОД АВТОРИЗАЦИИ--------------!>
         <?php
         ob_start();
 
-        session_start();
+     
 
         include "config_db.php";
 

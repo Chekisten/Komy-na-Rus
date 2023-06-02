@@ -1,5 +1,6 @@
 body {
     background-color:rgb(240, 240, 240);
+    margin: 2%;
 
 }
 
@@ -40,6 +41,14 @@ body {
     align-items: center
 }
 
+.article {
+    display: flex;
+}
+.front-article {
+    border: 0.5em solid black;
+    border-style: double;
+    padding: 2%;
+}
 
 svg {
     

@@ -50,6 +50,54 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, magnam voluptates! Eum fugit, omnis at aspernatur modi, distinctio quo id incidunt possimus officia aliquid cumque. Doloribus fuga magnam repellendus exercitationem?</p>
             </section>
         </main>
+<!---------------------КОД АВТОРИЗАЦИИ--------------!?
+        <?php
+        ob_start();
+
+        session_start();
+
+        include "config_db.php";
+
+        if( !empty($_SESSION['message']) ){
+            foreach($_SESSION['message'] as $value){
+                echo <<<MESSAGE
+        <div>{$value}</div>
+MESSAGE;
+            } 
+            unset($_SESSION['message']);
+        }
+
+        if( !empty($confirmation_token = $_GET['confirmation_token']) ){
+            include "verify/confirmation_token.php";
+        }
+
+        if( isset( $_GET['recovery_token']) ){
+            include "verify/recovery_token.php";
+        }
+
+        if (isset($_GET['logout'])) {
+            include "verify/logout.php";
+        }
+
+        if( $_SESSION['username']) {
+            include "components/lk.php";
+
+        } elseif( !isset($_GET['recovery']) && !isset($_GET['signup']) ){
+            include "verify/login.php";
+            include "components/auth.php";
+
+        } elseif( isset($_GET['recovery']) ){
+            include "verify/recovery.php";
+            include "components/recovery.php";
+
+        } elseif( isset($_GET['signup']) ){
+            include "verify/signup.php";
+            include "components/signup.php";
+
+        }
+        
+
+        ?>
 
         <?php require("components/footer.php");
         ?>
